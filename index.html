@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Home &mdash; My Sculpin Blog &mdash; Adventures in Web Development</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/picnic/4.1.2/picnic.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/picnic/4.1.2/plugins.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/styles/solarized-dark.min.css">
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+    <header>
+        <nav>
+          <a href="/" class="brand">
+            <img class="logo" src="/images/jackson/76x76.png" />
+            <span>My Sculpin Blog</span>
+          </a>
+
+          <input id="bmenub" type="checkbox" class="show">
+          <label for="bmenub" class="burger pseudo button">menu</label>
+
+          <div class="menu">
+            <a href="/blog">Archives</a>
+            <a href="/about">About</a>
+          </div>
+        </nav>
+    </header>
+
+    <div id="wrapper">    
+        <main>
+                        <article>
+        <header>
+            <h2><a href="/blog/2013/02/04/highlight">Syntax Highlighting</a></h2>
+            <span class="date">Feb 04th, 2013</span>
+        </header>
+        <div>
+          
+              
+        <p>You're all programmers, right? And you're writing code snippets on your Sculpin
+powered blog? Yeah. So you want some highlighting with your static site generation?
+Here you go!</p>
+
+<pre><code>namespace Foo;
+
+/**
+ * Awesome Contrived Example.
+ */
+class Bar implements BarInterface
+{
+    private $baz;
+
+    public function __construct(BazInterface $baz)
+    {
+        $this-&gt;baz = $baz;
+    }
+
+    public function doIt()
+    {
+        return $this-&gt;baz-&gt;do('it');
+    }
+}
+</code></pre>
+
+<p>You can also use <a href="http://michelf.ca/projects/php-markdown/extra/#fenced-code-blocks">fenced code blocks</a> with a syntax declaration at the top.
+You can use either <code>~</code> or <code>`</code> to mark them.</p>
+
+<pre><code class="php">if ($fencedCodeBlock-&gt;syntax !== 'PHP') {
+    throw new UnexpectedValueException("wat");
+}
+</code></pre>
+
+<p>Like this addition to the skeleton? You can thank for <a href="https://github.com/Pawka">@Pawka</a>
+for suggesting it. :)</p>
+
+
+                   
+        </div>
+    </article>
+    <article>
+        <header>
+            <h2><a href="/blog/2012/11/27/lorem-ipsum">Lorem Ipsum</a></h2>
+            <span class="date">Nov 27th, 2012</span>
+        </header>
+        <div>
+          
+              
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat congue
+lacus vel convallis. Cras nisi urna, ultrices non semper quis, ultricies sit
+amet est. Donec nunc velit, consequat a pulvinar a, eleifend id leo. Curabitur
+vel leo eros, vitae elementum purus. Integer id lorem hendrerit purus gravida
+commodo. Pellentesque nec rhoncus turpis. Cras feugiat odio eget quam semper at
+dictum lectus adipiscing. In ut est et mauris pulvinar placerat eget fringilla
+lectus.</p>
+
+<h1>awesome</h1>
+
+<pre><code class="html">&lt;button&gt;Button&lt;/button&gt;
+&lt;button class='success'&gt;Success&lt;/button&gt;
+&lt;button class='warning'&gt;Warning&lt;/button&gt;
+&lt;button class='error'&gt;Error&lt;/button&gt;
+&lt;button disabled&gt;Disabled&lt;/button&gt;
+</code></pre>
+
+
+
+                <p>
+            <a href="/blog/2012/11/27/lorem-ipsum">
+                Read more
+            </a>
+        </p>
+                   
+        </div>
+    </article>
+    <article>
+        <header>
+            <h2><a href="/blog/2012/11/26/and-then-there-was-textile-support">And Then There Was Textile Support</a></h2>
+            <span class="date">Nov 26th, 2012</span>
+        </header>
+        <div>
+          
+              
+        <p><a href="https://github.com/netcarver/textile">Textile</a> support was added on November 26th, 2012. Markdown is great, but so is choice. More converters for all!</p>
+
+<p>In honor of this milestone, this post is written in <strong>Textile</strong>.</p>
+
+                   
+        </div>
+    </article>
+    <article>
+        <header>
+            <h2><a href="/blog/2012/10/16/balrog">Balrog</a></h2>
+            <span class="date">Oct 16th, 2012</span>
+        </header>
+        <div>
+          
+              
+        <p>Found out about <a href="http://github.com/igorw/balrog">Balrog</a> today! It looks
+like a really nice micro static site generator. Maybe Sculpin and Balrog
+can be friends?</p>
+
+
+                   
+        </div>
+    </article>
+    <article>
+        <header>
+            <h2><a href="/blog/2012/09/29/symfony-live-hacking-day">Symfony Live Hacking Day!</a></h2>
+            <span class="date">Sep 29th, 2012</span>
+        </header>
+        <div>
+          
+              
+        <p>Fun times at the Symfony Live San Francisco 2012 Hacking Day! Code
+was hacked and pizza was had. Some pics of the conference are
+available on the <a href="https://www.facebook.com/media/set/?set=a.450514941665306.112810.129739647076172">Sensio Labs Facebook page</a>.</p>
+
+
+                   
+        </div>
+    </article>
+
+    <div class="nav-container"> 
+                        <a href="/page/2" class="left">Older Posts</a>
+            </div>
+             
+        </main>
+            
+        <footer class="container">
+            &copy; 2016 My Sculpin Blog
+        </footer>
+    </div>
+</body>
+</html>

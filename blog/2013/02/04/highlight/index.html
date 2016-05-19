@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Syntax Highlighting &mdash; My Sculpin Blog &mdash; Adventures in Web Development</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/picnic/4.1.2/picnic.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/picnic/4.1.2/plugins.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/styles/solarized-dark.min.css">
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+    <header>
+        <nav>
+          <a href="/" class="brand">
+            <img class="logo" src="/images/jackson/76x76.png" />
+            <span>My Sculpin Blog</span>
+          </a>
+
+          <input id="bmenub" type="checkbox" class="show">
+          <label for="bmenub" class="burger pseudo button">menu</label>
+
+          <div class="menu">
+            <a href="/blog">Archives</a>
+            <a href="/about">About</a>
+          </div>
+        </nav>
+    </header>
+
+    <div id="wrapper">    
+        <main>
+            <article>
+        <header>
+            <h2>Syntax Highlighting</h2>
+            <span class="date">May 19th, 2016</span>
+        </header>
+        <div class="contents">
+            <p>You're all programmers, right? And you're writing code snippets on your Sculpin
+powered blog? Yeah. So you want some highlighting with your static site generation?
+Here you go!</p>
+
+<pre><code>namespace Foo;
+
+/**
+ * Awesome Contrived Example.
+ */
+class Bar implements BarInterface
+{
+    private $baz;
+
+    public function __construct(BazInterface $baz)
+    {
+        $this-&gt;baz = $baz;
+    }
+
+    public function doIt()
+    {
+        return $this-&gt;baz-&gt;do('it');
+    }
+}
+</code></pre>
+
+<p>You can also use <a href="http://michelf.ca/projects/php-markdown/extra/#fenced-code-blocks">fenced code blocks</a> with a syntax declaration at the top.
+You can use either <code>~</code> or <code>`</code> to mark them.</p>
+
+<pre><code class="php">if ($fencedCodeBlock-&gt;syntax !== 'PHP') {
+    throw new UnexpectedValueException("wat");
+}
+</code></pre>
+
+<p>Like this addition to the skeleton? You can thank for <a href="https://github.com/Pawka">@Pawka</a>
+for suggesting it. :)</p>
+
+        </div>
+            </article>
+     
+        </main>
+            
+        <footer class="container">
+            &copy; 2016 My Sculpin Blog
+        </footer>
+    </div>
+</body>
+</html>

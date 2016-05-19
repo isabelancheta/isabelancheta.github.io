@@ -1,0 +1,63 @@
+#wrapper {
+    width: 900px;
+    margin: 0 auto;
+}
+
+nav .menu {
+    float: left;
+    margin-left: 20px;
+}
+
+nav .menu a {
+    margin-left: 20px;
+}
+
+main {
+    margin-top: 80px;
+}
+
+article {
+    margin-top: 50px;
+    border-bottom: 1px dashed #ccc;
+    color: #1D1D1D;
+}
+
+footer {
+    margin: 20px 0;
+    text-align: center;
+    color: #525252;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.nav-container {
+    overflow: auto;
+    padding: 30px 0;
+}
+
+article h2 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.date {
+    color: #565656;
+    font-size: 15px;
+}
+
+pre {
+    background: none;
+}
+
+@media screen and (max-width: 780px){
+    #wrapper {
+        width: 100%;
+        padding: 10px;
+    }
+}
